@@ -11,7 +11,7 @@ namespace API.Extensions
             return new UserDto
             {
                 Id = user.Id.ToString(),
-                DisplayName = user.Displayname,
+                DisplayName = user.DisplayName,
                 Email = user.Email,
                 Token = tokenService.CreateToken(user)
 

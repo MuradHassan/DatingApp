@@ -22,7 +22,7 @@ namespace API.Controllers
 
             var user = new AppUser
             {
-                Displayname = registerDto.DisplayName,
+                DisplayName = registerDto.DisplayName,
                 Email = registerDto.Email,
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password)),
                 PasswordSalt = hmac.Key
