@@ -58,11 +58,6 @@ namespace API.Data
             context.Messages.Remove(message);
         }
 
-        public async Task<bool> SaveAllAsync()
-        {
-            return await context.SaveChangesAsync() > 0;
-        }
-
         public void AddGroup(Group group)
         {
             context.Groups.Add(group);
